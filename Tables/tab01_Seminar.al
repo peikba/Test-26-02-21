@@ -68,7 +68,7 @@ table 50101 "CSD Seminar"
             Caption = 'Comment';
             Editable = false;
             FieldClass = FlowField;
-            CalcFormula = exist ("Comment Line" where ("Table Name" = filter ("CSD Seminar"), "No." = Field ("No.")));
+            CalcFormula = exist("Comment Line" where("Table Name" = filter("CSD Seminar"), "No." = Field("No.")));
         }
         field(100; "Seminar Price"; Decimal)
         {
@@ -149,15 +149,13 @@ table 50101 "CSD Seminar"
 
     procedure AssistEdit(): Boolean;
     begin
-        with Seminar do begin
-            Seminar := Rec;
-            SeminarSetup.get();
-            SeminarSetup.TestField("Seminar Nos.");
-            if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos.", xRec."No. Series", "No. Series") then begin
-                NoSeriesMgt.SetSeries("No.");
-                Rec := Seminar;
-                exit(true);
-            end;
+        Seminar := Rec;
+        SeminarSetup.get();
+        SeminarSetup.TestField("Seminar Nos.");
+        if NoSeriesMgt.SelectSeries(SeminarSetup."Seminar Nos.", xRec."No. Series", Seminar."No. Series") then begin
+            NoSeriesMgt.SetSeries(Seminar."No.");
+            Rec := Seminar;
+            exit(true);
         end;
     end;
 }

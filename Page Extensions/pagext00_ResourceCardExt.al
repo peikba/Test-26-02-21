@@ -11,11 +11,11 @@ pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
     {
         addlast(General)
         {
-            field("CSD Resource Type"; "CSD Resource Type")
+            field("CSD Resource Type"; Rec."CSD Resource Type")
             {
                 ApplicationArea = All;
             }
-            field("CSD Quantity Per Day"; "CSD Quantity Per Day")
+            field("CSD Quantity Per Day"; Rec."CSD Quantity Per Day")
             {
                 ApplicationArea = All;
             }
@@ -28,7 +28,7 @@ pageextension 50100 "CSD ResourceCardExt" extends "Resource Card"
             {
                 Caption = 'Room';
                 Visible = ShowMaxField;
-                field("CSD Maximum Participants"; "CSD Maximum Participants")
+                field("CSD Maximum Participants"; Rec."CSD Maximum Participants")
                 {
                     ApplicationArea = All;
                 }

@@ -15,7 +15,7 @@ page 50102 "CSD Seminar List"
         {
             repeater(Group)
             {
-                field("No."; "No.")
+                field("No."; Rec."No.")
                 {
                     ApplicationArea = All;
                 }
@@ -23,19 +23,19 @@ page 50102 "CSD Seminar List"
                 {
                     ApplicationArea = All;
                 }
-                field("Seminar Duration"; "Seminar Duration")
+                field("Seminar Duration"; Rec."Seminar Duration")
                 {
                     ApplicationArea = All;
                 }
-                field("Seminar Price"; "Seminar Price")
+                field("Seminar Price"; Rec."Seminar Price")
                 {
                     ApplicationArea = All;
                 }
-                field("Minimum Participants"; "Minimum Participants")
+                field("Minimum Participants"; Rec."Minimum Participants")
                 {
                     ApplicationArea = All;
                 }
-                field("Maximum Participants"; "Maximum Participants")
+                field("Maximum Participants"; Rec."Maximum Participants")
                 {
                     ApplicationArea = All;
                 }

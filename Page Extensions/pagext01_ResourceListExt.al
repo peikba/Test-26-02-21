@@ -16,11 +16,11 @@ pageextension 50101 "CSD ResourceListExt" extends "Resource List"
         }
         addafter(Type)
         {
-            field("CSD Resource Type"; "CSD Resource Type")
+            field("CSD Resource Type"; Rec."CSD Resource Type")
             {
                 ApplicationArea = All;
             }
-            field("CSD Maximum Participants"; "CSD Maximum Participants")
+            field("CSD Maximum Participants"; Rec."CSD Maximum Participants")
             {
                 Visible = ShowMaxField;
                 ApplicationArea = All;

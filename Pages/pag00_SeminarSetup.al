@@ -15,15 +15,15 @@ page 50100 "CSD Seminar Setup"
         {
             group(Numbering)
             {
-                field("Seminar Nos."; "Seminar Nos.")
+                field("Seminar Nos."; Rec."Seminar Nos.")
                 {
                     ApplicationArea = All;
                 }
-                field("Seminar Registration Nos."; "Seminar Registration Nos.")
+                field("Seminar Registration Nos."; Rec."Seminar Registration Nos.")
                 {
                     ApplicationArea = All;
                 }
-                field("Posted Seminar Reg. Nos."; "Posted Seminar Reg. Nos.")
+                field("Posted Seminar Reg. Nos."; Rec."Posted Seminar Reg. Nos.")
                 {
                     ApplicationArea = All;
                 }
